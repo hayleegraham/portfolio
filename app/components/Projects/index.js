@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
+//Projects
 const Projects = () => {
   return (
     <div className="flex flex-col self-center gap-5 pt-10">
