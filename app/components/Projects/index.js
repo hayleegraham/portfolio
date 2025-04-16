@@ -11,7 +11,7 @@ const Projects = () => {
       </div>
       <div className="flex flex-row self-center gap-12 flex-wrap w-[1200px] p-5">
 
-        <Link className="flex flex-col gap-2 w-[350px]" href="/">
+        <Link className="flex flex-col gap-2 w-[350px]" href="/projects">
           <div>
             <Image
               src="/proj_graham_gardens.png"
@@ -31,7 +31,7 @@ const Projects = () => {
           </div>
         </Link>
 
-        <Link className="flex flex-col gap-2 w-[350px]" href="/">
+        <Link className="flex flex-col gap-2 w-[350px]" href="/projects">
           <div>
             <Image
               src="/proj_weather.png"
@@ -49,7 +49,7 @@ const Projects = () => {
           </div>
         </Link>
 
-        <Link className="flex flex-col gap-2 w-[350px]" href="/">
+        <Link className="flex flex-col gap-2 w-[350px]" href="/projects">
           <div>
             <Image
               src="/proj_ent_reviews.png"
@@ -68,7 +68,7 @@ const Projects = () => {
           </div>
         </Link>
 
-        <Link className="flex flex-col gap-2 w-[350px]" href="/">
+        <Link className="flex flex-col gap-2 w-[350px]" href="/projects">
           <div>
             <Image
               src="/proj_shapes.png"
@@ -87,7 +87,7 @@ const Projects = () => {
           </div>
         </Link>
 
-        <Link className="flex flex-col gap-2 w-[350px]" href="/">
+        <Link className="flex flex-col gap-2 w-[350px]" href="/projects">
           <div>
             <Image
               src="/proj_hangman.png"
@@ -106,7 +106,7 @@ const Projects = () => {
           </div>
         </Link>
 
-        <Link className="flex flex-col gap-2 w-[350px]" href="/">
+        <Link className="flex flex-col gap-2 w-[350px]" href="/projects">
           <div>
             <Image
               src="/proj_card_match.png"

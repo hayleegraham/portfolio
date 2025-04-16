@@ -9,7 +9,7 @@ const Resume = () => {
         <h2 className="text-2xl font-bold self-start">BLOG</h2>
       </div>
       <div className="flex flex-col self-center gap-12 w-[1200px] p-5">
-        <Link className="flex flex-row gap-2" href="/">
+        <Link className="flex flex-row gap-2" href="/blog">
           <Image
             src="/blog_audio_api.png"
             width={260}
@@ -32,7 +32,7 @@ const Resume = () => {
           </div>
         </Link>
 
-        <Link className="flex flex-row gap-2" href="/">
+        <Link className="flex flex-row gap-2" href="/blog">
           <Image
             src="/blog_next_react.jpg"
             width={260}
@@ -55,7 +55,7 @@ const Resume = () => {
           </div>
         </Link>
 
-        <Link className="flex flex-row gap-2" href="/">
+        <Link className="flex flex-row gap-2" href="/blog">
           <Image
             src="/blog_accessibility.jpg"
             width={260}

@@ -25,30 +25,43 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row">
-
-      <Link href="https://github.com/hayleegraham" passHref legacyBehavior>
-      <a target="_blank" rel="noopener noreferrer">
-        <Image 
-        src="/github_icon.png"
-        width={40}
-        height={40}
-        alt="Git Hub Logo"
-        />
-        </a>
-      </Link>
-      <Link href="https://www.linkedin.com/in/haylee-graham-b57826237/" passHref legacyBehavior>
-      <a target="_blank" rel="noopener noreferrer">
-        <Image 
-        src="/linked_in_icon.png"
-        width={40}
-        height={40}
-        alt="LinkedIn Logo"
-        />
-        </a>
-      </Link>
+      <div className="flex flex-row gap-5 mt-[30px]">
+        <Link href="https://github.com/hayleegraham" target="_blank" passHref>
+          <Image
+            src="/github_icon.png"
+            width={40}
+            height={40}
+            alt="Git Hub Logo"
+          />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/haylee-graham-b57826237/"
+          target="_blank"
+          passHref
+        >
+          <Image
+            src="/linked_in_icon.png"
+            width={40}
+            height={40}
+            alt="LinkedIn Logo"
+            className="p-[1px]"
+          />
+        </Link>
+        <Link
+          href="https://codepen.io/hayleegraham"
+          target="_blank"
+          passHref
+        >
+          <Image
+            src="/codepen_icon.png"
+            width={40}
+            height={40}
+            alt="CodePen Logo"
+            className="pt-[1px]"
+          />
+        </Link>
       </div>
-      <div className="flex flex-row gap-8 mt-[38px] mr-12">
+      <div className="flex flex-row gap-8 mt-[38px] mr-12 w-[391px] justify-end">
         <Link href="/">BACK TO TOP</Link>
       </div>
     </div>
