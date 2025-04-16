@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="flex self-center flex-col pt-6">
+    <div className="flex self-center flex-col pt-10">
       <div className="w-[1200px] flex self-center">
         <h2 className="text-2xl font-bold self-start">RESUME</h2>
       </div>
