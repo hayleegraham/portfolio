@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Resume = () => {
   return (
-    <div className="flex flex-col self-center gap-5 pt-10">
+    <div className="flex flex-col self-center pt-10">
       <div className="w-[1200px] flex self-center">
         <h2 className="text-2xl font-bold self-start">BLOG</h2>
       </div>
