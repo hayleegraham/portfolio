@@ -6,13 +6,15 @@ const Header = () => {
     <div className="flex h-[100px] bg-[#CCE3DE] justify-between">
       <div className="flex">
         <div className="h-[96px] pt-0.5">
-          <Image
-            src="/logo.png"
-            width={96}
-            height={96}
-            alt="Graham Slams Logo"
-            className="p-0.5 ml-12"
-          />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              width={96}
+              height={96}
+              alt="Graham Slams Logo"
+              className="p-0.5 ml-12"
+            />
+          </Link>
         </div>
         <div className="flex flex-col pl-6 pt-[18px]">
           <Link className="text-4xl font-bold" href="/">

@@ -23,11 +23,11 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-center text-lg">Graham Gardens</h3>
           <p>An E-Commerce website for a seed company with PayPal checkout.</p>
-          <div className="flex flex-row gap-3 mt-0.5">
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">React</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">Next.js</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">MySQL Database</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">Tailwind</div>
+          <div className="flex flex-row gap-4 mt-0.5 flex-wrap">
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">React</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">Next.js</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">MySQL</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">Tailwind</div>
           </div>
         </Link>
 
@@ -43,9 +43,9 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-center text-lg">Weather Website</h3>
           <p>A searchable weather website using weather API.</p>
-          <div className="flex flex-row gap-3 mt-0.5">
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">Angular</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">Bootstrap</div>
+          <div className="flex flex-row gap-4 mt-0.5">
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">Angular</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">Bootstrap</div>
           </div>
         </Link>
 
@@ -61,10 +61,10 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-center text-lg">Entertainment Reviews</h3>
           <p>A project built to enter and track internal entertainment reviews for a Casino.</p>
-          <div className="flex flex-row gap-3 mt-0.5">
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">JavaScript</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">HTML</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">SCSS</div>
+          <div className="flex flex-row gap-4 mt-0.5">
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">JavaScript</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">HTML</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">SCSS</div>
           </div>
         </Link>
 
@@ -80,10 +80,10 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-center text-lg">Random Shape Generator</h3>
           <p>A random shape generator that creates unique designs with each refresh.</p>
-          <div className="flex flex-row gap-3 mt-0.5">
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">JavaScript</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">HTML</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">SCSS</div>
+          <div className="flex flex-row gap-4 mt-0.5">
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">JavaScript</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">HTML</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">SCSS</div>
           </div>
         </Link>
 
@@ -99,10 +99,10 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-center text-lg">Dinosaur Hangman Game</h3>
           <p>A hangman game where you try to save the dinosaurs from an incoming meteor.</p>
-          <div className="flex flex-row gap-3 mt-0.5">
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">JavaScript</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">HTML</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">SCSS</div>
+          <div className="flex flex-row gap-4 mt-0.5">
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">JavaScript</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">HTML</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">SCSS</div>
           </div>
         </Link>
 
@@ -118,10 +118,10 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-center text-lg">Quick Match</h3>
           <p>A card matching game using a dog API for adorable images.</p>
-          <div className="flex flex-row gap-3 mt-0.5">
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">JavaScript</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">HTML</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1">SCSS</div>
+          <div className="flex flex-row gap-4 mt-0.5">
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">JavaScript</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">HTML</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5">SCSS</div>
           </div>
         </Link>
 

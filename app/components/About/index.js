@@ -8,16 +8,16 @@ const About = () => {
         <h2 className="text-2xl font-bold self-start">ABOUT</h2>
       </div>
       <div className="flex self-center">
-        <div className="p-5">
+        <div className="pt-5 pr-[60px]">
           <Image
             src="/haylee_profile.jpg"
-            width={580}
-            height={580}
+            width={500}
+            height={500}
             alt="Picture of Haylee Graham"
           />
         </div>
-        <div className="w-[580px] p-5">
-          <p className="p-2.5">
+        <div className="w-[600px] p-5 pr-10">
+          <p>
             Hi, I&apos;m Haylee Graham, a passionate Audio Engineer and
             soon-to-be graduate with an Associate&apos;s Degree in Web
             Development. With over 10 years of experience in the audio-visual
@@ -26,19 +26,29 @@ const About = () => {
             events and permanent installations. I have experience working in
             casinos and maintaining dedicated server rooms, network switches,
             and large 70-volt audio systems. I&apos;ve honed my skills in
-            operating and maintaining digital and analog audio consoles, video
-            switchers, lighting systems, signage content management systems, and
+            operating and maintaining digital audio consoles, video
+            switchers, lighting systems, content management systems, and
             more.
           </p>
-          <p className="p-2.5">
+          <p className="pt-2.5">
             I&apos;ve also developed a strong foundation in web development,
-            with hands-on experience in JavaScript, React, React with Next.js,
+            with hands-on experience in JavaScript, React, Next.js,
             PHP, SQL, and CMS platforms like WordPress. I&apos;m excited to
             bring my creativity, technical skills, and problem-solving abilities
             to new challenges in both the AV and web development industries.
             I&apos;m always eager to learn and adapt in fast-paced environments,
             and I thrive when working in collaborative, team-oriented settings.
           </p>
+          <div className="flex flex-row gap-5 pt-6 pl-2">
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">JavaScript</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">React</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">Next.js</div>
+          </div>
+          <div className="flex flex-row gap-5 pt-5 pl-2">
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">PHP</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">SQL</div>
+            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">WordPress</div>
+          </div>
         </div>
       </div>
     </div>
