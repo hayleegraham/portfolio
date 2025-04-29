@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="flex h-[100px] bg-[#CCE3DE] justify-between">
+    <div className="flex h-[100px] bg-[#d3eef0] justify-between">
       <div className="flex">
         <div className="h-[96px] pt-0.5">
           <Link href="/">

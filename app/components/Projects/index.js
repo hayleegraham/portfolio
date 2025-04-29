@@ -1,33 +1,12 @@
-'use client'
-import React from "react";
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-import { get, ref } from "firebase/database";
-import { database } from "../../firebaseConfig";
-import { useEffect, useState } from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../AppContext";
 
 //Projects
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-      const projRef = ref(database, 'projects_home');
-      get(projRef).then((snapshot) => {
-          console.log(snapshot.val())
-          if (snapshot.exists()) {
-              const projArray = Object.entries(snapshot.val()).map(([id, data]) => ({
-                  id,
-                      ...data,
-              }));
-              setProjects(projArray);
-          } else {
-              console.log("No Data")
-          }
-      })
-      .catch((error) => {
-          console.error(error)
-      })
-  }, [])
+  const { projects } = useContext(AppContext);
 
   return (
     <div className="flex flex-col self-center pt-10">
@@ -36,29 +15,31 @@ const Projects = () => {
       </div>
       <div className="flex flex-row self-center gap-12 flex-wrap w-[1200px] p-5">
 
-      {projects.map((proj) => (
-                   
-        <Link className="flex flex-col gap-2 w-[350px]" href="/projects" key={proj.id}>
-          <div>
-            <Image
-              src={proj.img}
-              width={350}
-              height={247}
-              alt={proj.alt}
-              quality={100}
-            />
-          </div>
-          
-          <h3 className="font-bold text-center text-lg">{proj.title}</h3>
-          <p>{proj.desc}</p>
+        {projects.map((proj) => (
+          <div className="flex flex-col gap-2 w-[350px] shadow-[1px_1px_5px_rgba(0,0,0,0.15)] border border-gray-400" key={proj.id}>
+            <Link href={`/project_details?name=${proj.title.replace(/\s/g, '_').replace(/&/g, 'and')}`}>
+              <div>
+                <Image
+                  src={proj.img}
+                  width={350}
+                  height={247}
+                  alt={proj.alt}
+                  quality={100}
+                  className="border-b border-gray-400"
+                />
+              </div>
 
-          <div className="flex flex-row gap-4 mt-0.5 flex-wrap">
-          {proj.tech.map((t) => (
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] px-1.5" key={t}>{t}</div>
-          ))}
+              <h3 className="font-bold text-center text-lg mx-5 my-2">{proj.title}</h3>
+              <p className="mx-5">{proj.desc}</p>
+
+            </Link>
+            <div className="flex flex-row gap-4 mt-1 mb-4 flex-wrap mx-5">
+              {proj.tech.map((t) => (
+                <div className="border border-[#EAD7DD] bg-[#F8F2F4] rounded-xl px-2 py-0.5 w-[83px] text-center text-sm" key={t}>{t}</div>
+              ))}
+            </div>
           </div>
-        </Link>
-                  ))}
+        ))}
 
       </div>
     </div>

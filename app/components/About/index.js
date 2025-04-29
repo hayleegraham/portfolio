@@ -14,9 +14,10 @@ const About = () => {
             width={500}
             height={500}
             alt="Picture of Haylee Graham"
+            className="shadow-[2px_2px_5px_rgba(0,0,0,0.25)]"
           />
         </div>
-        <div className="w-[600px] p-5 pr-10">
+        <div className="w-[600px] pl-5 py-8 pr-10">
           <p>
             Hi, I&apos;m Haylee Graham, a passionate Audio Engineer and
             soon-to-be graduate with an Associate&apos;s Degree in Web
@@ -40,14 +41,14 @@ const About = () => {
             and I thrive when working in collaborative, team-oriented settings.
           </p>
           <div className="flex flex-row gap-5 pt-6 pl-2">
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">JavaScript</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">React</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">Next.js</div>
+            <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">JavaScript</div>
+            <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">React</div>
+            <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Next.js</div>
           </div>
           <div className="flex flex-row gap-5 pt-5 pl-2">
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">PHP</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">SQL</div>
-            <div className="border border-[#cce3de] rounded-sm bg-[#eaf4f4] p-1.5 w-[140px] text-center">WordPress</div>
+            <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">PHP</div>
+            <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">SQL</div>
+            <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">WordPress</div>
           </div>
         </div>
       </div>

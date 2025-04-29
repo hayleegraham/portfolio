@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Resume = () => {
+const Blog = () => {
   return (
     <div className="flex flex-col self-center pt-10">
       <div className="w-[1200px] flex self-center">
@@ -16,6 +16,7 @@ const Resume = () => {
             height={150}
             alt="Web Audio API"
             quality={100}
+            className="border border-gray-500"
           />
           <div className="flex flex-col gap-2 pr-2 pl-5">
             <h3 className="text-lg font-bold">What is Web Audio API?</h3>
@@ -39,6 +40,7 @@ const Resume = () => {
             height={150}
             alt="React vs. Next.js"
             quality={100}
+            className="border border-gray-500"
           />
           <div className="flex flex-col gap-2 pr-2 pl-5">
             <h3 className="text-lg font-bold">React vs. Next.js</h3>
@@ -62,6 +64,7 @@ const Resume = () => {
             height={150}
             alt="React vs. Next.js"
             quality={100}
+            className="border border-gray-500"
           />
           <div className="flex flex-col gap-2 pr-2 pl-5">
             <h3 className="text-lg font-bold">
@@ -84,4 +87,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Blog;
