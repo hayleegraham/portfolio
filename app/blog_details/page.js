@@ -5,49 +5,48 @@ import React, { useContext, useState, useEffect } from "react";
 import { AppContext } from "../components/AppContext";
 import { useSearchParams } from "next/navigation";
 
-export default function ProjectDetailsPage() {
-    const { projects, getProjectByName } = useContext(AppContext);
-    const [projData, setProjData] = useState();
+export default function BlogDetailsPage() {
+    const { blogs, getBlogByName } = useContext(AppContext);
+    const [blogData, setBlogData] = useState();
 
     const searchParams = useSearchParams();
-    const urlName = searchParams.get("name");
+    const urlName = decodeURIComponent(searchParams.get("name"));
 
-    // Replace the placeholders back to their original characters
-    const projName = urlName.replace(/_/g, " ").replace(/and/g, "&");
 
     useEffect(() => {
-        if (projects && !projData) {
-            const data = getProjectByName(projName);
-            setProjData(data);
+        if (blogs && !blogData) {
+            const data = getBlogByName(urlName);
+            setBlogData(data);
         }
-    }, [projects]);
+    }, [blogs]);
 
     return (
         <div>
-            {projData ? (
-                projData.case_study ? (
+            {blogData ? (
+                blogData.content_4 ? (
                     <div className="flex flex-wrap justify-self-center flex-col pt-10">
                         <div className="w-[1200px] flex self-center justify-center pb-4" id="top">
                             <h1 className="text-3xl font-bold text-center">
-                                {projData.title}
+                                {blogData.name}
                             </h1>
                         </div>
                         <div className="pt-3 pr-2 self-center">
                             <Image
-                                src={projData.img_lg}
-                                width={projData.img_w}
-                                height={projData.img_h}
-                                alt={projData.alt}
+                                src={blogData.img_lg}
+                                width={blogData.img_w}
+                                height={blogData.img_h}
+                                alt={blogData.alt}
                                 quality={100}
-                                className="border rounded-lg border-black w-[1200px]"
+                                className="border rounded-lg border-black w-[1000px]"
                             />
                         </div>
 
                         <div className="flex flex-col justify-center w-[1200px] px-3 pt-10">
 
-                            <p className="w-[900px] self-center">{projData.long_desc}</p>
+                            <p className="w-[900px] self-center">{blogData.content_1}</p>
+                            </div>
 
-                            <div className="flex flex-col mt-6 w-[900px] self-center">
+                            {/* <div className="flex flex-col mt-6 w-[900px] self-center">
                                 <div className="self-center">Technology Used:</div>
                                 <div className="flex flex-row gap-5 pt-4 flex-wrap self-center">
                                     {projData.tech.map((t) => (
@@ -80,7 +79,7 @@ export default function ProjectDetailsPage() {
                                 </Link>
                             </div>   
 
-                        </div>
+                        
 
                         <div className="flex self-center my-5 w-[1200px] gap-5 border-b border-gray-400">
                             <h2 className="text-2xl font-bold">Case Study</h2>
@@ -212,7 +211,7 @@ export default function ProjectDetailsPage() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
 
@@ -221,10 +220,10 @@ export default function ProjectDetailsPage() {
                     <div className="flex flex-wrap justify-self-center flex-col pt-10">
                         <div className="w-[1200px] flex self-center justify-center pb-4" id="top">
                             <h1 className="text-3xl font-bold text-center">
-                                {projData.title}
+                                {blogData.name}
                             </h1>
                         </div>
-                        <div className="pt-3 pr-2 self-center">
+                        {/* <div className="pt-3 pr-2 self-center">
                             <Image
                                 src={projData.img_lg}
                                 width={projData.img_w}
@@ -272,7 +271,7 @@ export default function ProjectDetailsPage() {
                                 </Link>
                             </div>   
 
-                        </div>
+                        </div> */}
 
                     </div>
                 )

@@ -73,8 +73,16 @@ const AppProvider = ({ children }) => {
     const projData = projects.find(
       (item) => item.title === projName
     )
-    console.log("product data from context", projData);
+    //console.log("product detailed data from context", projData);
     return projData;
+  }
+
+  const getBlogByName = (blogName) => {
+    const blogData = blogs.find(
+      (item) => item.name === blogName
+    )
+    console.log("blog detailed data from context", blogData);
+    return blogData;
   }
 
   const filterByTech = (techType) => {
@@ -103,6 +111,7 @@ const AppProvider = ({ children }) => {
         filterByTech,
         displayedProjects,
         blogs,
+        getBlogByName,
       }}
     >
       {children}

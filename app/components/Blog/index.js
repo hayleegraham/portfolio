@@ -7,7 +7,7 @@ const Blog = ({ data }) => {
     <div className="flex flex-col self-center">
       <div className="flex flex-col self-center gap-12 w-[1200px] p-5">
         {data?.map((blog) => (
-          <Link key={blog.name} className="flex flex-row gap-2" href="/blog">
+          <Link key={blog.name} className="flex flex-row gap-2" href={`/blog_details?name=${encodeURIComponent(blog.name)}`}>
             <Image
               src={blog.img}
               width={780}
