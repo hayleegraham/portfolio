@@ -1,22 +1,15 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import React, { useContext } from "react";
-import { AppContext } from "../AppContext";
 
-//Projects
-const Projects = () => {
-  const { projects } = useContext(AppContext);
-
+const Projects = ({data}) => {
+  
   return (
-    <div className="flex flex-col self-center pt-10">
-      <div className="w-[1200px] flex self-center">
-        <h2 className="text-2xl font-bold self-start">PROJECTS</h2>
-      </div>
+    
       <div className="flex flex-row self-center gap-12 flex-wrap w-[1200px] p-5">
 
-        {projects.map((proj) => (
-          <div className="flex flex-col gap-2 w-[350px] shadow-[1px_1px_5px_rgba(0,0,0,0.15)] border border-gray-400" key={proj.id}>
+        {data?.map((proj) => (
+          <div className="flex flex-col gap-2 w-[350px] shadow-[1px_1px_5px_rgba(0,0,0,0.15)] border border-gray-400 rounded-md" key={proj.id}>
             <Link href={`/project_details?name=${proj.title.replace(/\s/g, '_').replace(/&/g, 'and')}`}>
               <div>
                 <Image
@@ -25,7 +18,7 @@ const Projects = () => {
                   height={247}
                   alt={proj.alt}
                   quality={100}
-                  className="border-b border-gray-400"
+                  className="border-b border-gray-400 rounded-t-md"
                 />
               </div>
 
@@ -42,7 +35,6 @@ const Projects = () => {
         ))}
 
       </div>
-    </div>
   );
 };
 

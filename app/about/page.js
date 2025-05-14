@@ -7,6 +7,6 @@ export default function AboutPage() {
 
 
     return (
-            <About />
+            <About longDesc={true}/>
     );
 }

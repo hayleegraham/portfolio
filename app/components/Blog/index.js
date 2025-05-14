@@ -4,10 +4,8 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <div className="flex flex-col self-center pt-10">
-      <div className="w-[1200px] flex self-center">
-        <h2 className="text-2xl font-bold self-start">BLOG</h2>
-      </div>
+    <div className="flex flex-col self-center">
+      
       <div className="flex flex-col self-center gap-12 w-[1200px] p-5">
         <Link className="flex flex-row gap-2" href="/blog">
           <Image

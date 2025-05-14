@@ -26,7 +26,7 @@ export default function ProjectDetailsPage() {
         <div>
             {projData ? (
                 projData.case_study ? (
-                    <div className="flex flex-wrap self-center flex-col pt-10">
+                    <div className="flex flex-wrap justify-self-center flex-col pt-10">
                         <div className="w-[1200px] flex self-center justify-center pb-4" id="top">
                             <h1 className="text-3xl font-bold text-center">
                                 {projData.title}
@@ -43,11 +43,13 @@ export default function ProjectDetailsPage() {
                             />
                         </div>
 
-                        <div className="flex self-center justify-between w-[1200px] px-3 pt-10">
-                            <p className="w-[550px]">{projData.long_desc}</p>
-                            <div className="flex flex-col ml-10">
+                        <div className="flex flex-col justify-center w-[1200px] px-3 pt-10">
+
+                            <p className="w-[900px] self-center">{projData.long_desc}</p>
+
+                            <div className="flex flex-col mt-6 w-[900px] self-center">
                                 <div>Technology Used:</div>
-                                <div className="flex flex-row gap-5 pt-4 pl-4 flex-wrap w-[500px]">
+                                <div className="flex flex-row gap-5 pt-4 flex-wrap self-center">
                                     {projData.tech.map((t) => (
                                         <div
                                             className="border border-[#EAD7DD] bg-[#F8F2F4] rounded-2xl px-1.5 w-[100px] text-center"
@@ -58,25 +60,26 @@ export default function ProjectDetailsPage() {
                                     ))}
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="flex self-center py-8 pl-3 w-[1200px] gap-5">
-                            <Link
-                                href={projData.url_live}
-                                className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
-                                target="_blank"
-                                passHref
-                            >
-                                View Live Site
-                            </Link>
-                            <Link
-                                href={projData.url_github}
-                                className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
-                                target="_blank"
-                                passHref
-                            >
-                                View Code
-                            </Link>
+                            <div className="flex self-center py-10 w-[900px] gap-5">
+                                <Link
+                                    href={projData.url_live}
+                                    className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                    target="_blank"
+                                    passHref
+                                >
+                                    View Live Site
+                                </Link>
+                                <Link
+                                    href={projData.url_github}
+                                    className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                    target="_blank"
+                                    passHref
+                                >
+                                    View Code
+                                </Link>
+                            </div>   
+
                         </div>
 
                         <div className="flex self-center my-5 w-[1200px] gap-5 border-b border-gray-400">
@@ -149,6 +152,7 @@ export default function ProjectDetailsPage() {
                                 />
                                 <div className="flex flex-col ml-12">
                                     <p className="mr-6 mt-2 w-[600px]">{projData.mockup_desc}</p>
+                                    <div className="flex gap-5 mt-6">
                                     <Link
                                         href={projData.mockup_url}
                                         className="justify-start border w-[140px] mt-6 border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
@@ -157,6 +161,15 @@ export default function ProjectDetailsPage() {
                                     >
                                         View Mockup
                                     </Link>
+                                    <Link
+                                        href={projData.styleguide_url}
+                                        className="justify-start border w-[160px] mt-6 border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                        target="_blank"
+                                        passHref
+                                    >
+                                        View Style Guide
+                                    </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -194,7 +207,7 @@ export default function ProjectDetailsPage() {
                                 </div>
 
                                 <div className="flex flex-col">
-                                    <p className="mr-6 my-1 w-[600px]">
+                                    <p className="mr-6 mt-11 w-[600px]">
                                         {projData.final_prod_desc}
                                     </p>
                                 </div>
@@ -202,8 +215,10 @@ export default function ProjectDetailsPage() {
                         </div>
 
                     </div>
+
                 ) : (
-                    <div className="flex flex-wrap self-center flex-col pt-10">
+
+                    <div className="flex flex-wrap justify-self-center flex-col pt-10">
                         <div className="w-[1200px] flex self-center justify-center pb-4" id="top">
                             <h1 className="text-3xl font-bold text-center">
                                 {projData.title}
@@ -220,11 +235,13 @@ export default function ProjectDetailsPage() {
                             />
                         </div>
 
-                        <div className="flex self-center justify-between w-[1200px] px-3 pt-10">
-                            <p className="w-[550px]">{projData.long_desc}</p>
-                            <div className="flex flex-col ml-10">
+                        <div className="flex flex-col justify-center w-[1200px] px-3 pt-10">
+
+                            <p className="w-[900px] self-center">{projData.long_desc}</p>
+
+                            <div className="flex flex-col mt-6 w-[900px] self-center">
                                 <div>Technology Used:</div>
-                                <div className="flex flex-row gap-5 pt-4 pl-4 flex-wrap w-[500px]">
+                                <div className="flex flex-row gap-5 pt-4 flex-wrap self-center">
                                     {projData.tech.map((t) => (
                                         <div
                                             className="border border-[#EAD7DD] bg-[#F8F2F4] rounded-2xl px-1.5 w-[100px] text-center"
@@ -235,26 +252,28 @@ export default function ProjectDetailsPage() {
                                     ))}
                                 </div>
                             </div>
+
+                            <div className="flex self-center py-10 w-[900px] gap-5">
+                                <Link
+                                    href={projData.url_live}
+                                    className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                    target="_blank"
+                                    passHref
+                                >
+                                    View Live Site
+                                </Link>
+                                <Link
+                                    href={projData.url_github}
+                                    className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                    target="_blank"
+                                    passHref
+                                >
+                                    View Code
+                                </Link>
+                            </div>   
+
                         </div>
 
-                        <div className="flex self-center py-8 pl-3 w-[1200px] gap-5">
-                            <Link
-                                href={projData.url_live}
-                                className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
-                                target="_blank"
-                                passHref
-                            >
-                                View Live Site
-                            </Link>
-                            <Link
-                                href={projData.url_github}
-                                className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
-                                target="_blank"
-                                passHref
-                            >
-                                View Code
-                            </Link>
-                        </div>
                     </div>
                 )
             ) : (
