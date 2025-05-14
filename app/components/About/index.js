@@ -12,7 +12,7 @@ const About = ({ longDesc }) => {
         <div className="flex flex-col justify-center">
           <div className="w-[1200px] flex flex-col self-center" id="top">
             <h2 className="text-2xl font-bold self-center">ABOUT</h2>
-            <p className="font-semibold text-lg self-center py-4">
+            <p className="font-medium text-lg self-center py-4">
               Hi, I&apos;m Haylee Graham - a passionate Audio Engineer and
               full-stack Web Developer.
             </p>
@@ -60,16 +60,16 @@ const About = ({ longDesc }) => {
 
             <div className="flex mb-6">
               <div className="flex flex-col">
-                <div className="mt-6">Experienced In:</div>
+                <div className="mt-8">Experienced In:</div>
                 <div className="flex flex-row gap-5 pt-6 pl-2">
-                  <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">React</div>
-                  <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Next.js</div>
-                  <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Firebase</div>
+                  <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">React</div>
+                  <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Next.js</div>
+                  <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Firebase</div>
                 </div>
                 <div className="flex flex-row gap-5 pt-5 pl-2">
-                  <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">PHP</div>
-                  <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">SQL</div>
-                  <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">WordPress</div>
+                  <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">PHP</div>
+                  <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">SQL</div>
+                  <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">WordPress</div>
                 </div>
 
               </div>
@@ -118,14 +118,14 @@ const About = ({ longDesc }) => {
 
               <div className="mt-14">Experienced In:</div>
               <div className="flex flex-row gap-5 pt-6 pl-2">
-                <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">React</div>
-                <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Next.js</div>
-                <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Firebase</div>
+                <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">React</div>
+                <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Next.js</div>
+                <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">Firebase</div>
               </div>
               <div className="flex flex-row gap-5 pt-5 pl-2">
-                <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">PHP</div>
-                <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">SQL</div>
-                <div className="border border-[#B1D0D3] rounded bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">WordPress</div>
+                <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">PHP</div>
+                <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">SQL</div>
+                <div className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] p-1.5 w-[140px] text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]">WordPress</div>
               </div>
             </div>
           </div>

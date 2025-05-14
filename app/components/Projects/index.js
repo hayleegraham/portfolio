@@ -28,7 +28,7 @@ const Projects = ({data}) => {
             </Link>
             <div className="flex flex-row gap-4 mt-1 mb-4 flex-wrap mx-5">
               {proj.tech.map((t) => (
-                <div className="border border-[#EAD7DD] bg-[#F8F2F4] rounded-xl px-2 py-0.5 w-[83px] text-center text-sm" key={t}>{t}</div>
+                <div className="border border-[#B1D0D3] bg-[#eaf4f4] rounded-lg px-2 py-0.5 w-[84px] text-center text-sm" key={t}>{t}</div>
               ))}
             </div>
           </div>

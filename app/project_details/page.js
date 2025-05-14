@@ -32,7 +32,7 @@ export default function ProjectDetailsPage() {
                                 {projData.title}
                             </h1>
                         </div>
-                        <div className="pt-4 pr-2 self-center">
+                        <div className="pt-3 pr-2 self-center">
                             <Image
                                 src={projData.img_lg}
                                 width={projData.img_w}
@@ -52,7 +52,7 @@ export default function ProjectDetailsPage() {
                                 <div className="flex flex-row gap-5 pt-4 flex-wrap self-center">
                                     {projData.tech.map((t) => (
                                         <div
-                                            className="border border-[#EAD7DD] bg-[#F8F2F4] rounded-2xl px-1.5 w-[100px] text-center"
+                                            className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] px-1.5 w-[100px] text-center"
                                             key={t}
                                         >
                                             {t}
@@ -64,7 +64,7 @@ export default function ProjectDetailsPage() {
                             <div className="flex self-center py-10 w-[900px] gap-5">
                                 <Link
                                     href={projData.url_live}
-                                    className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                    className="justify-start bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                     target="_blank"
                                     passHref
                                 >
@@ -72,7 +72,7 @@ export default function ProjectDetailsPage() {
                                 </Link>
                                 <Link
                                     href={projData.url_github}
-                                    className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                    className="justify-start bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                     target="_blank"
                                     passHref
                                 >
@@ -129,7 +129,7 @@ export default function ProjectDetailsPage() {
                                     </p>
                                     <Link
                                         href={projData.wireframe_url}
-                                        className="justify-start border w-[140px] mt-6 border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                        className="justify-start w-[140px] mt-6 bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                         target="_blank"
                                         passHref
                                     >
@@ -155,7 +155,7 @@ export default function ProjectDetailsPage() {
                                     <div className="flex gap-5 mt-6">
                                     <Link
                                         href={projData.mockup_url}
-                                        className="justify-start border w-[140px] mt-6 border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                        className="justify-start w-[140px] mt-6 bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                         target="_blank"
                                         passHref
                                     >
@@ -163,7 +163,7 @@ export default function ProjectDetailsPage() {
                                     </Link>
                                     <Link
                                         href={projData.styleguide_url}
-                                        className="justify-start border w-[160px] mt-6 border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                        className="justify-start w-[160px] mt-6 bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                         target="_blank"
                                         passHref
                                     >
@@ -189,7 +189,7 @@ export default function ProjectDetailsPage() {
                                     <div className="flex py-5 gap-5">
                                         <Link
                                             href={projData.url_live}
-                                            className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                            className="justify-start bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                             target="_blank"
                                             passHref
                                         >
@@ -197,7 +197,7 @@ export default function ProjectDetailsPage() {
                                         </Link>
                                         <Link
                                             href={projData.url_github}
-                                            className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                            className="justify-start bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                             target="_blank"
                                             passHref
                                         >
@@ -224,7 +224,7 @@ export default function ProjectDetailsPage() {
                                 {projData.title}
                             </h1>
                         </div>
-                        <div className="pt-4 pr-2 self-center">
+                        <div className="pt-3 pr-2 self-center">
                             <Image
                                 src={projData.img_lg}
                                 width={projData.img_w}
@@ -244,7 +244,7 @@ export default function ProjectDetailsPage() {
                                 <div className="flex flex-row gap-5 pt-4 flex-wrap self-center">
                                     {projData.tech.map((t) => (
                                         <div
-                                            className="border border-[#EAD7DD] bg-[#F8F2F4] rounded-2xl px-1.5 w-[100px] text-center"
+                                            className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] px-1.5 w-[100px] text-center"
                                             key={t}
                                         >
                                             {t}
@@ -256,7 +256,7 @@ export default function ProjectDetailsPage() {
                             <div className="flex self-center py-10 w-[900px] gap-5">
                                 <Link
                                     href={projData.url_live}
-                                    className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                    className="justify-start bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                     target="_blank"
                                     passHref
                                 >
@@ -264,7 +264,7 @@ export default function ProjectDetailsPage() {
                                 </Link>
                                 <Link
                                     href={projData.url_github}
-                                    className="justify-start border border-[#B1D0D3] bg-[#eaf4f4] rounded py-1.5 px-3 text-center shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)]"
+                                    className="justify-start bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
                                     target="_blank"
                                     passHref
                                 >

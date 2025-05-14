@@ -8,7 +8,7 @@ import Resume from "./components/Resume";
 import Blog from "./components/Blog";
 
 export default function Home() {
-  const { projects } = useContext(AppContext);
+  const { projects, blogs } = useContext(AppContext);
 
   return (
     <div>
@@ -25,7 +25,7 @@ export default function Home() {
         <div className="w-[1200px] flex self-center">
           <h2 className="text-2xl font-bold self-start">BLOG</h2>
         </div>
-        <Blog />
+        <Blog data={blogs}/>
       </div>
 
       <div className="flex flex-col self-center pt-10">

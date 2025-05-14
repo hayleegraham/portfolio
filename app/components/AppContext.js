@@ -8,8 +8,9 @@ const AppContext = createContext();
 const AppProvider = ({ children }) => {
 
   const [projects, setProjects] = useState([]);
-  const [selectedTech, setSelectedTech] = useState('');
   const [technologies, setTechnologies] = useState([]);
+  const [blogs, setBlogs] = useState([]);
+  const [selectedTech, setSelectedTech] = useState('');
   const [displayedProjects, setDisplayedProjects] = useState([]);
 
   useEffect(() => {
@@ -47,6 +48,24 @@ const AppProvider = ({ children }) => {
       .catch((error) => {
         console.error(error)
       })
+
+    const blogRef = ref(database, 'blog');
+    get(blogRef).then((snapshot) => {
+      console.log("blog data:", snapshot.val())
+      if (snapshot.exists()) {
+        const blogArray = Object.entries(snapshot.val()).map(([id, data]) => ({
+          id,
+          ...data,
+        }));
+        setBlogs(blogArray);
+      } else {
+        console.log("No Data")
+      }
+    })
+      .catch((error) => {
+        console.error(error)
+      })
+
   }, [])
 
   //when project on homepage is clicked, return data for clicked item
@@ -83,6 +102,7 @@ const AppProvider = ({ children }) => {
         selectedTech,
         filterByTech,
         displayedProjects,
+        blogs,
       }}
     >
       {children}
