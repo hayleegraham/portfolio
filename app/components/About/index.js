@@ -40,7 +40,7 @@ const About = ({ longDesc }) => {
                   zoom conference rooms and other coorporate events, to permanent audio/visual system installations.
                 </p>
                 <p className="pt-3">
-                  I have experience working in casinos, where I maintained server rooms, network switches, and large 70-volt audio systems. I've also developed strong skills in programming and operating Q-SYS systems.
+                  I have experience working in casinos, where I maintained server rooms, network switches, and large 70-volt audio systems. I&apos;ve also developed strong skills in programming and operating Q-SYS systems.
                 </p>
                 <h3 className="text-xl font-bold mb-4 mt-[36px]">Web Developer</h3>
                 <p>
@@ -105,7 +105,7 @@ const About = ({ longDesc }) => {
             <div className="w-[650px] py-8 pr-10">
               <div>
                 <p>
-                  Hi, I'm Haylee Graham — a passionate Audio Engineer and full-stack Web Developer.
+                  Hi, I&apos;m Haylee Graham — a passionate Audio Engineer and full-stack Web Developer.
                 </p>
                 <p className="pt-3.5">
                   With over 10 years of experience in the audio-visual industry, I&apos;ve now transitioned into the world web development with hands-on experience in React, Next.js, PHP, SQL, and WordPress.
