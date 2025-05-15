@@ -15,7 +15,7 @@ export default function ProjectsPage() {
     };
 
     return (
-        <div className="flex flex-col self-center pt-10 pb-8 xl:w-[70%] sm:w-[85%] w-[80%] justify-self-center">
+        <div className="flex flex-col self-center pt-10 pb-8 w-[80%] justify-self-center">
             <div className="w-full flex justify-center self-center">
                 <h2 className="text-2xl font-bold self-center">PROJECTS</h2>
             </div>

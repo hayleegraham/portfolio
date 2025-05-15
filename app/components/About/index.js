@@ -8,7 +8,7 @@ const About = ({ longDesc }) => {
 
   return (
 
-    <div className="flex justify-self-center self-center flex-col pt-10 xl:w-[70%] w-[90%]">
+    <div className="flex justify-self-center self-center flex-col pt-10 xl:w-[75%] w-[90%]">
 
       {longDesc ? (
         <div className="flex flex-col self-center w-full">
@@ -51,7 +51,7 @@ const About = ({ longDesc }) => {
                 </div>
               </div>
 
-              <div className="lg:w-[55%] sm:w-[65%] w-[85%] pl-4 py-6">
+              <div className="lg:w-[55%] sm:w-[65%] w-[85%] pl-4 py-5">
 
                 <h3 className="text-xl font-bold mb-4">Audio Engineer</h3>
                 <p>
@@ -63,7 +63,7 @@ const About = ({ longDesc }) => {
                 <p className="pt-3">
                   I have experience working in casinos, where I maintained server rooms, network switches, and large 70-volt audio systems. I&apos;ve also developed strong skills in programming and operating Q-SYS systems.
                 </p>
-                <h3 className="text-xl font-bold my-4">Web Developer</h3>
+                <h3 className="text-xl font-bold mb-4 mt-5">Web Developer</h3>
                 <p>
                   I&apos;ve developed a strong foundation in web development,
                   with hands-on experience in React, Next.js,
@@ -75,8 +75,8 @@ const About = ({ longDesc }) => {
                   to new challenges in both the AV and web development industries.
                 </p>
 
-                <h3 className="text-xl font-bold my-4">Personal Life</h3>
-                <p>
+                <h3 className="text-xl font-bold mb-4 mt-5">Personal Life</h3>
+                <p className="mb-3">
                   In my spare time, I love to be outdoors hiking, biking, Onewheel-ing, snowboarding, and gardening. My boyfriend and I take full advantage of the amazing beaches here in San Diego and go snorkeling and body surfing often. We also love playing video games together, and coding together, as he is also a full-stack Web Developer, and the reason I starting learning to code!
                 </p>
 
@@ -106,7 +106,7 @@ const About = ({ longDesc }) => {
                 className="shadow-[2px_2px_5px_rgba(0,0,0,0.25)]"
               />
             </div>
-            <div className="lg:w-[55%] sm:w-[65%] w-[85%] py-8 pr-6 self-center">
+            <div className="lg:w-[55%] sm:w-[65%] w-[85%] py-8 pr-10 self-center">
               <div>
                 <p>
                   Hi, I&apos;m Haylee Graham — a passionate Audio Engineer and full-stack Web Developer.

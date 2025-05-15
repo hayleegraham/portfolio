@@ -35,7 +35,7 @@ const Header = () => {
       <NavbarToggle />
       <NavbarCollapse>
 
-        <NavbarLink href="/about" className="lg:text-base text-black dark:text-black bg-[#d3eef0] border border-gray-500">ABOUT</NavbarLink>
+        <NavbarLink href="/about" className="lg:text-base text-black dark:text-black bg-[#d3eef0] border border-gray-500 dark:hover:bg-gray-50">ABOUT</NavbarLink>
         <NavbarLink href="/projects" className="lg:text-base text-black dark:text-black bg-[#d3eef0] border border-gray-500">PROJECTS</NavbarLink>
         <NavbarLink href="/blog" className="lg:text-base text-black dark:text-black bg-[#d3eef0] border border-gray-500">BLOG</NavbarLink>
         <NavbarLink href="/resume" className="lg:text-base text-black dark:text-black bg-[#d3eef0] border border-gray-500">RESUME</NavbarLink>

@@ -6,19 +6,19 @@ const Projects = ({data}) => {
   
   return (
     
-      <div className="flex flex-row self-center gap-12 flex-wrap justify-evenly py-5 w-full">
+      <div className="flex flex-row self-center gap-12 flex-wrap justify-evenly py-5 w-full xl:px-3.5">
 
         {data?.map((proj) => (
-          <div className="flex flex-col gap-2 w-[350px] shadow-[1px_1px_5px_rgba(0,0,0,0.15)] border border-gray-400 rounded-md" key={proj.id}>
+          <div className="flex flex-col gap-2 xl:w-[29%] md:w-[43%] shadow-[1px_1px_5px_rgba(0,0,0,0.15)] border border-gray-400 rounded-md" key={proj.id}>
             <Link href={`/project_details?name=${proj.title.replace(/\s/g, '_').replace(/&/g, 'and')}`}>
               <div>
                 <Image
                   src={proj.img}
-                  width={350}
-                  height={247}
+                  width={1050}
+                  height={741}
                   alt={proj.alt}
                   quality={100}
-                  className="border-b border-gray-400 rounded-t-md"
+                  className="border-b border-gray-400 rounded-t-md w-full"
                 />
               </div>
 
