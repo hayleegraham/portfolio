@@ -23,258 +23,173 @@ export default function BlogDetailsPage() {
     return (
         <div>
             {blogData ? (
-                blogData.content_4 ? (
-                    <div className="flex flex-wrap justify-self-center flex-col pt-10">
-                        <div className="w-[1200px] flex self-center justify-center pb-4" id="top">
-                            <h1 className="text-3xl font-bold text-center">
-                                {blogData.name}
-                            </h1>
+
+                <div className="flex flex-wrap justify-self-center flex-col pt-10 pb-10">
+
+                    <div className="w-[900px] flex self-center justify-center pb-4" id="top">
+                        <h1 className="text-3xl font-bold text-center">
+                            {blogData.name}
+                        </h1>
+                    </div>
+
+                    <div className="pt-3 pr-2 self-center">
+                        <Image
+                            src={blogData.img_lg}
+                            width={blogData.img_w}
+                            height={blogData.img_h}
+                            alt={blogData.alt}
+                            quality={100}
+                            className="border rounded-lg border-black w-[900px]"
+                        />
+                        <div className="flex m-3 text-gray-700 gap-5">
+                            <div>Author: Haylee Graham</div>
+                            <div>Posted: {blogData.date}</div>
                         </div>
-                        <div className="pt-3 pr-2 self-center">
-                            <Image
-                                src={blogData.img_lg}
-                                width={blogData.img_w}
-                                height={blogData.img_h}
-                                alt={blogData.alt}
-                                quality={100}
-                                className="border rounded-lg border-black w-[1000px]"
-                            />
-                        </div>
+                    </div>
 
-                        <div className="flex flex-col justify-center w-[1200px] px-3 pt-10">
+                    <div className="flex flex-col justify-center self-center w-[900px] px-3 pt-4">
 
-                            <p className="w-[900px] self-center">{blogData.content_1}</p>
-                            </div>
+                        <p className="w-[900px] self-center">{blogData.content_1}</p>
 
-                            {/* <div className="flex flex-col mt-6 w-[900px] self-center">
-                                <div className="self-center">Technology Used:</div>
-                                <div className="flex flex-row gap-5 pt-4 flex-wrap self-center">
-                                    {projData.tech.map((t) => (
-                                        <div
-                                            className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] px-1.5 w-[100px] text-center"
-                                            key={t}
-                                        >
-                                            {t}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="flex self-center justify-center py-10 w-[900px] gap-8">
-                                <Link
-                                    href={projData.url_live}
-                                    className="justify-end bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                    target="_blank"
-                                    passHref
-                                >
-                                    View Live Site
-                                </Link>
-                                <Link
-                                    href={projData.url_github}
-                                    className="justify-end bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                    target="_blank"
-                                    passHref
-                                >
-                                    View Code
-                                </Link>
-                            </div>   
-
-                        
-
-                        <div className="flex self-center my-5 w-[1200px] gap-5 border-b border-gray-400">
-                            <h2 className="text-2xl font-bold">Case Study</h2>
+                        <div className="w-[900px] flex self-center justify-start py-4">
+                            <h2 className="text-xl font-bold">
+                                {blogData.header_2}
+                            </h2>
                         </div>
 
-                        <div className="flex flex-col self-center my-5 w-[1200px] gap-5">
-                            <h3 className="text-xl font-bold">Project Goals</h3>
-                            <ul className="list-disc ml-8">
-                                {projData.proj_goals.map((goal) => (
-                                    <li key={goal}>{goal}</li>
-                                ))}
+                        <p className="w-[900px] self-center">{blogData.content_2}</p>
+
+                        <div className="w-[900px] flex self-center justify-start py-4">
+                            <h2 className="text-xl font-bold">
+                                {blogData.header_3}
+                            </h2>
+                        </div>
+
+                        <p className="w-[900px] self-center">{blogData.content_3}</p>
+
+                        {blogData.list_3 &&
+                            <ul className="list-disc pt-3 pl-3">
+                                {blogData.list_3.map((item) => (
+                                    <li key={item} className="p-1">
+                                        {item}
+                                    </li>
+                                ))
+                                }
                             </ul>
-                        </div>
+                        }
 
-                        <div className="flex flex-col self-center my-5 w-[1200px] gap-4">
-                            <h3 className="text-xl font-bold">Step 1: The Sketch</h3>
-                            <div className="flex self-center my-5 w-[1200px] gap-5">
-                                <Image
-                                    src={projData.sketch_img}
-                                    width={1407}
-                                    height={2070}
-                                    alt={projData.sketch_alt}
-                                    quality={100}
-                                    className="border rounded-lg border-black h-[450px] w-[350px] ml-4"
-                                />
-                                <div className="flex flex-col ml-12">
-                                    <p className="mr-6 mt-2 w-[600px]">{projData.sketch_desc}</p>
+                        {blogData.header_4 &&
+                            <div className="w-[900px] flex self-center flex-col">
+                                <div className="flex justify-start py-4">
+                                    <h2 className="text-xl font-bold">
+                                        {blogData.header_4}
+                                    </h2>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div className="flex flex-col self-center my-5 w-[1200px] gap-4">
-                            <h3 className="text-xl font-bold">Step 2: The Wireframe</h3>
-                            <div className="flex self-center my-5 w-[1200px] gap-5">
-                                <Image
-                                    src={projData.wireframe_img}
-                                    width={1284}
-                                    height={816}
-                                    alt={projData.wireframe_alt}
-                                    quality={100}
-                                    className="border rounded-lg border-black h-[300px] w-auto ml-4"
-                                />
-                                <div className="flex flex-col ml-12">
-                                    <p className="mr-6 mt-2 w-[600px]">
-                                        {projData.wireframe_desc}
-                                    </p>
-                                    <Link
-                                        href={projData.wireframe_url}
-                                        className="justify-start w-[140px] mt-6 bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                        target="_blank"
-                                        passHref
-                                    >
-                                        View Wireframe
-                                    </Link>
+                                <p className="w-[900px] self-center">{blogData.content_4}</p>
+                            </div>
+                        }
+
+                        {blogData.header_5 ? (
+
+                            <div className="w-[900px] flex self-center flex-col">
+                                <div className="flex justify-start py-4">
+                                    <h2 className="text-xl font-bold">
+                                        {blogData.header_5}
+                                    </h2>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div className="flex flex-col self-center my-5 w-[1200px] gap-4">
-                            <h3 className="text-xl font-bold">Step 3: The Mockup</h3>
-                            <div className="flex self-center my-5 w-[1200px] gap-5">
-                                <Image
-                                    src={projData.mockup_img}
-                                    width={1284}
-                                    height={816}
-                                    alt={projData.mockup_alt}
-                                    quality={100}
-                                    className="border rounded-lg border-black h-[300px] w-auto ml-4"
-                                />
-                                <div className="flex flex-col ml-12">
-                                    <p className="mr-6 mt-2 w-[600px]">{projData.mockup_desc}</p>
-                                    <div className="flex gap-5">
-                                    <Link
-                                        href={projData.mockup_url}
-                                        className="justify-start mt-6 bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                        target="_blank"
-                                        passHref
-                                    >
-                                        View Mockup
-                                    </Link>
-                                    <Link
-                                        href={projData.styleguide_url}
-                                        className="justify-start mt-6 bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                        target="_blank"
-                                        passHref
-                                    >
-                                        View Style Guide
-                                    </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                <p className="w-[900px] self-center">{blogData.content_5}</p>
 
-                        <div className="flex flex-col self-center my-5 w-[1200px] gap-4">
-                            <h3 className="text-xl font-bold">Step 4: The Final Product</h3>
-                            <div className="flex self-center my-5 w-[1200px] gap-4">
-                                <div className="flex flex-col gap-5 w-[540px]">
-                                    <h3 className="text-xl font-bold">Key Features</h3>
-                                    <ul className="list-disc ml-8 flex flex-wrap">
-                                        {projData.key_features.map((feature) => (
-                                            <li key={feature} className="w-[49%]">
-                                                {feature}
+                                {blogData.list_5 &&
+                                    <ul className="list-disc pt-3 pl-5">
+                                        {blogData.list_5.map((item) => (
+                                            <li key={item} className="p-1">
+                                                {item}
                                             </li>
-                                        ))}
+                                        ))
+                                        }
                                     </ul>
-                                </div>
+                                }
+                            </div>
+                        ) : (
+                            <div className="w-[900px] self-center">
+                                <p className="w-[900px] self-center py-4">{blogData.content_5}</p>
 
-                                <div className="flex flex-col">
-                                    <p className="mr-6 w-[600px]">
-                                        {projData.final_prod_desc}
-                                    </p>
-                                    <div className="flex py-5 gap-5">
-                                        <Link
-                                            href={projData.url_live}
-                                            className="justify-start bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                            target="_blank"
-                                            passHref
-                                        >
-                                            View Live Site
-                                        </Link>
-                                        <Link
-                                            href={projData.url_github}
-                                            className="justify-start bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                            target="_blank"
-                                            passHref
-                                        >
-                                            View Code
-                                        </Link>
+                                {blogData.list_5 &&
+                                    <ul className="list-disc pl-5">
+                                        {blogData.list_5.map((item) => (
+                                            <li key={item} className="p-1">
+                                                {item}
+                                            </li>
+                                        ))
+                                        }
+                                    </ul>
+                                }
+                            </div>
+                        )}
+
+
+
+
+                        {blogData.codechunk &&
+
+                            <div className="w-[900px] flex self-center flex-col">
+
+                                {blogData.codechunk_header &&
+                                    <div className="flex justify-start pt-5">
+                                        <h3 className="font-semibold">
+                                            {blogData.codechunk_header}
+                                        </h3>
                                     </div>
-                                </div>
+                                }
+
+                                <Image
+                                    src={blogData.codechunk}
+                                    height={blogData.codechunk_h}
+                                    width={blogData.codechunk_w}
+                                    alt={blogData.codechunk_alt}
+                                    quality={100}
+                                    className="border rounded-lg border-black w-[600px] mt-5"
+                                />
                             </div>
-                        </div> */}
+                        }
+
+                        <div className="w-[900px] flex self-center justify-start pb-5 pt-8">
+                            <h3 className="font-semibold">Helpful Video</h3>
+                        </div>
+
+                        <iframe
+                            src={blogData.video}
+                            className="w-[900px] h-[450px] object-center"
+                        />
+
+                        <div className="w-[900px] flex self-center justify-start pb-4 pt-8">
+                            <h3 className="font-semibold">Helpful Link</h3>
+                        </div>
+
+                        <p className="w-[900px] self-center">I found this article very helpful in understanding this topic more. Check it out for more information.</p>
+
+                        <Link
+                            href={blogData.link_url}
+                            className="self-center mt-5 bg-[#023E50] w-[120px] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
+                            target="_blank"
+                            passHref>
+                            Go To Article
+                        </Link>
+
+
+                        <div className="w-[900px] flex self-center justify-start py-4">
+                            <h2 className="text-xl font-bold">
+                                {blogData.header_6}
+                            </h2>
+                        </div>
+
+                        <p className="w-[900px] self-center">{blogData.content_6}</p>
 
                     </div>
 
-                ) : (
-
-                    <div className="flex flex-wrap justify-self-center flex-col pt-10">
-                        <div className="w-[1200px] flex self-center justify-center pb-4" id="top">
-                            <h1 className="text-3xl font-bold text-center">
-                                {blogData.name}
-                            </h1>
-                        </div>
-                        {/* <div className="pt-3 pr-2 self-center">
-                            <Image
-                                src={projData.img_lg}
-                                width={projData.img_w}
-                                height={projData.img_h}
-                                alt={projData.alt}
-                                quality={100}
-                                className="border rounded-lg border-black w-[1200px]"
-                            />
-                        </div>
-
-                        <div className="flex flex-col justify-center w-[1200px] px-3 pt-10">
-
-                            <p className="w-[900px] self-center">{projData.long_desc}</p>
-
-                            <div className="flex flex-col mt-6 w-[900px] self-center">
-                                <div className="self-center">Technology Used:</div>
-                                <div className="flex flex-row gap-5 pt-4 flex-wrap self-center">
-                                    {projData.tech.map((t) => (
-                                        <div
-                                            className="border border-[#B1D0D3] rounded-lg bg-[#eaf4f4] px-1.5 w-[100px] text-center"
-                                            key={t}
-                                        >
-                                            {t}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="flex self-center justify-center py-10 w-[900px] gap-8">
-                                <Link
-                                    href={projData.url_live}
-                                    className="justify-end bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                    target="_blank"
-                                    passHref
-                                >
-                                    View Live Site
-                                </Link>
-                                <Link
-                                    href={projData.url_github}
-                                    className="justify-end bg-[#023E50] rounded py-1.5 px-3 text-center text-white shadow-[0.5px_0.5px_4px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 active:scale-95"
-                                    target="_blank"
-                                    passHref
-                                >
-                                    View Code
-                                </Link>
-                            </div>   
-
-                        </div> */}
-
-                    </div>
-                )
+                </div>
             ) : (
                 <h1>Loading...</h1>
             )}

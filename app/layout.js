@@ -28,16 +28,16 @@ export default function RootLayout({ children }) {
         <title>Haylee Graham Portfolio</title>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-full`}
       >
-        <div className="flex flex-col min-h-screen">
+
+        <div className="flex flex-col overflow-x-clip min-h-screen">
           <AppProvider>
             <Header />
             <Suspense>
-              {children}
+              <main className="flex flex-col lg:w-[95%] w-full self-center">{children}</main>
             </Suspense>
             <Footer />
-
           </AppProvider>
         </div>
       </body>

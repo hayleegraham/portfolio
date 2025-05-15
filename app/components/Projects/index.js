@@ -6,7 +6,7 @@ const Projects = ({data}) => {
   
   return (
     
-      <div className="flex flex-row self-center gap-12 flex-wrap w-[1200px] p-5">
+      <div className="flex flex-row self-center gap-12 flex-wrap justify-evenly py-5 w-full">
 
         {data?.map((proj) => (
           <div className="flex flex-col gap-2 w-[350px] shadow-[1px_1px_5px_rgba(0,0,0,0.15)] border border-gray-400 rounded-md" key={proj.id}>

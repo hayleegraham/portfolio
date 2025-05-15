@@ -14,22 +14,22 @@ export default function Home() {
     <div>
       <About longDesc={false} />
 
-      <div className="flex flex-col self-center pt-10">
-        <div className="w-[1200px] flex self-center">
+      <div className="flex flex-col self-center pt-10 xl:w-[70%] sm:w-[85%] w-[80%] justify-self-center">
+        <div className="flex self-center w-full">
           <h2 className="text-2xl font-bold self-start">PROJECTS</h2>
         </div>
         <Projects data={projects} />
       </div>
       
-      <div className="flex flex-col self-center pt-10">
-        <div className="w-[1200px] flex self-center">
+      <div className="flex flex-col self-center pt-10 xl:w-[70%] w-[90%] justify-self-center">
+        <div className="flex self-center w-full">
           <h2 className="text-2xl font-bold self-start">BLOG</h2>
         </div>
         <Blog data={blogs}/>
       </div>
 
-      <div className="flex flex-col self-center pt-10">
-        <div className="w-[1200px] flex self-center">
+      <div className="flex flex-col self-center pt-10 xl:w-[70%] w-[90%] justify-self-center">
+        <div className="flex self-center w-full">
           <Link href="/resume">
             <h2 className="text-2xl font-bold self-start">RESUME</h2>
           </Link>

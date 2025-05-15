@@ -15,14 +15,14 @@ export default function ProjectsPage() {
     };
 
     return (
-        <div className="flex flex-col justify-center pt-10 pb-8">
-            <div className="w-[1200px] flex justify-center self-center">
+        <div className="flex flex-col self-center pt-10 pb-8 xl:w-[70%] sm:w-[85%] w-[80%] justify-self-center">
+            <div className="w-full flex justify-center self-center">
                 <h2 className="text-2xl font-bold self-center">PROJECTS</h2>
             </div>
 
             {/* filter */}
-            <div className="flex justify-end w-[1200px] self-center pr-8 my-2">
-                <label htmlFor="categories">Filter by Technology:</label>
+            <div className="flex lg:justify-end justify-center w-full self-center lg:pr-8 my-2">
+                <label htmlFor="venues">Filter by Technology:</label>
                 <select
                     className="ml-2 rounded py-1 !pr-8 cursor-pointer"
                     id="venues"
